@@ -222,8 +222,12 @@ button{
     cursor: pointer;
 }
 @media only screen and (max-width: 480px) {
-  /* styles go here */
+  .desktop-version{
+    display: none;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
-  /* styles go here */
+    .desktop-version{
+        display: none;
+      }
 }
