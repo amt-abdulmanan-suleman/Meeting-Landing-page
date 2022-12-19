@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-:root{
-
+body{
+    background-color: #FAFAFA;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
 }
 .logo{
     width: 119px;
@@ -39,8 +41,6 @@
 .info-content h1{
     width: 445px;
     height: 128px;
-    font-family: 'Red Hat Display';
-    font-style: normal;
     font-weight: 900;
     font-size: 64px;
     line-height: 64px;
@@ -50,32 +50,43 @@
 .info-content p{
     width: 540px;
     height: 52px;
-    font-family: 'Red Hat Display';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
     color: #87879D;
 }
+.info-content-btn > button:nth-of-type(1){
+    background-color: #4D96A9;
+}
+.info-content-btn > button:nth-of-type(2){
+    background: #855FB1;
+}
+.info-content-btn > button:nth-of-type(2):hover{
+    background:#B18BDD;
+}
+.info-content-btn > button:nth-of-type(1):hover{
+    background:#71C0D4;
+}
+#info-content-btn-span1{
+    color: #8FE3F9; 
+}
 .circle-with-bar > div:nth-of-type(1){
     width: 1px;
     height: 84px;
-    border: 1px solid  #87879D;
+    border: 1px solid  rgba(135, 135, 157,0.5);
     
 }
 .circle-with-bar > div:nth-of-type(2){
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    border: 1px solid #87879D;
+    border: 1px solid rgba(135, 135, 157,0.5);
     display: flex;
     align-items: center;
     justify-content: center
 }
 .circle-with-bar > div> p{
-    font-family: 'Red Hat Display';
-    font-style: normal;
     font-weight: 900;
     font-size: 16px;
     line-height: 26px;
@@ -121,8 +132,6 @@
     margin-left: 450px;
 }
 .more-info > p:nth-of-type(1) {
-    font-family: 'Red Hat Display';
-    font-style: normal;
     font-weight: 900;
     font-size: 16px;
     line-height: 26px;
@@ -130,9 +139,18 @@
     text-transform: uppercase;
     color: #4D96A9;
 }
+
+.more-info > p:nth-of-type(2){
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #87879D;
+    width:540px;
+    height:78px;
+    margin-top: 16px;
+}
 .more-info >  h2{
-    font-family: 'Red Hat Display';
-    font-style: normal;
     font-weight: 900;
     font-size: 40px;
     line-height: 44px;
@@ -141,6 +159,54 @@
     height: 88px;
     color: #28283D;
 }
+footer{
+    width: 1440px;
+    background-image:  url('./assets/desktop/image-footer.jpg');  
+    background-color:rgba(77, 150, 169); 
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    background-size: cover;
+    height: 308px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 165px;
+    padding-right: 165px;
+    z-index: 0;
+}
+footer h2{
+    width: 350px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    color: #FAFAFA;
+}
+footer p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FAFAFA;
+    width: 350px;
+}
+.footer-btn{
+    background-color: #855FB1;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    
+}
+.footer-btn:hover{
+   background:  #B18BDD;
+}
+#btn-span{
+    color: #D9B8FF;
+}
+.n-2{
+    margin-top: 72px;
+    margin-bottom: 0;
+    top:28px;
+    z-index: 1;
+}
 div{
     border: 1px solid black;
 }
@@ -148,5 +214,16 @@ div{
 button{
     padding: 16px 40px;
     border: none;
-    border-radius: 50px;
+    border-radius: 29px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+@media only screen and (max-width: 480px) {
+  /* styles go here */
+}
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  /* styles go here */
 }
